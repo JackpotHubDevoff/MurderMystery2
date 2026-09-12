@@ -21,7 +21,7 @@ local function findMeshAndTexture(node)
         local meshId = props.MeshId or props.MeshID
         if meshId and meshId ~= "" then
             local textureId = props.TextureId or props.TextureID or ""
-            local scale = props.Scale or Vector3.new(0.045,0.045,0.045)
+            local scale = props.Scale or Vector3.new(1, 1, 1)
             local size = props.Size or Vector3.new(0.045,0.045,0.045)
             return {
                 meshid = meshId, 
